@@ -1,14 +1,14 @@
-govau-wayback
-=============
+NLA OpenWayback Overlays
+========================
 
-Lightly modified Wayback machine for use with Australian Government 
-Web Archive (AGWA) web application. 
+These overlays provide configuration and styling for our various instances of
+the [Wayback](https://github.com/iipc/openwayback) web archive replay tool.
 
-The files in this project are mainly from the Open Source Wayback
-Machine version 1.7.1 and come from WAR file *wayback-1.7.1-SNAPSHOT.war*
-contained in the root folder of the distribution file
-*dist-1.7.1-SNAPSHOT-1.7.1-SNAPSHOT.tar.gz*.
+* agwa - [Australian Government Web Archive](http://webarchive.nla.gov.au/gov/) (.gov.au crawls)
+* wdh - [Whole Domain Harvest](http://dl.nla.gov.au/wdh/) (.au crawls)
+* nph - [nph-arch legacy PANDORA content](http://pandora.nla.gov.au/nph-wb/)
 
-The initial checkin consists of the virgin files from the WAR file
-mentioned above. The customisations for use with AGWA are checked in
-as a revision so that it is easier to see what has been modified.
+Deploying
+---------
+
+Specify `NLA_ENVIRON=agwa` or `NLA_ENVIRON=wdh` in the jettyctl config.
